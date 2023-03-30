@@ -15,6 +15,11 @@
             border-collapse: collapse;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
         th, tfoot {
             color: white;
             border: 1px solid black;
@@ -39,10 +44,11 @@
 <body>
     <h1>Usando tabelas grandes</h1>
     <table>
+        <caption>População Sudeste</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -65,7 +71,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num"><strong>87.242.335</strong></td>
             </tr>
         </tfoot>
