@@ -15,16 +15,24 @@
             border-collapse: collapse;
         }
 
-        thead {
+        th, tfoot {
+            color: white;
             border: 1px solid black;
             padding: 5px;
             text-align: center;
+            background-color: gray;
+            
         }
 
         td {
             border: 1px solid black;
             padding: 5px;
             text-align: center;
+        }
+        
+
+        .num {
+            text-align: right;
         }
     </style>
 </head>
@@ -40,11 +48,26 @@
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td>45.919.049</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.732.660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16.615.526</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3.975.100</td>
             </tr>
         </tbody>
         <tfoot>
-
+            <tr>
+                <th>Total de habitantes</th>
+                <td class="num"><strong>87.242.335</strong></td>
+            </tr>
         </tfoot>
     </table>
 </body>
