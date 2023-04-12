@@ -14,21 +14,24 @@
 <body>
     <h1>Teste de Formulario</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
-        <p>
-            <label for="inome">Nome</label>
-            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
-        </p>
-        <p>
-            <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" required min="0" max="10" step="0.1">
-        </p>
-        <p>
-            <label for="inasc">Nascimento</label>
-            <input type="date" name="nasc" id="inasc">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-        </p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome Completo" autocomplete="name">
+            </p>
+            <p>
+                <label for="imedia">Média</label>
+                <input type="number" name="media" id="imedia" required min="0" max="10" step="0.1">
+            </p>
+            <p>
+                <label for="inasc">Nascimento</label>
+                <input type="date" name="nasc" id="inasc">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+            </p>
+        </fieldset>
     </form>
 </body>
 </html>
