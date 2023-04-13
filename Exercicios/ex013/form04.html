@@ -13,7 +13,7 @@
 </head>
 <body>
     <h1>Testando Check-box</h1>
-    <form action="cadstro.php" method="get">
+    <form action="cadstro.php" method="post">
         <fieldset>
             <legend>Gênero</legend>
             <input type="radio" name="genero" id="imas" value="M"><label for="imas"> Masculino</label>
@@ -28,15 +28,19 @@
             <input type="checkbox" name="ten" id="iten"><label for="iten">Tênis</label><br>
         </fieldset>
         <p>
-            <input type="submit" value="Enviar">
-        </p>
-        <p>
             <label for="icor">Cor</label>
             <input type="color" name="cor" id="icor">
         </p>
         <p>
             <label for="inivel">Nível de satisfação</label>
             <input type="range" name="nivel" id="inivel" min="1" max="10" value="1">
+        </p>
+        <p>
+            <label for="ifoto">Foto de perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
         </p>
     </form>
 </body>
