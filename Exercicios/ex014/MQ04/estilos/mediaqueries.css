@@ -16,6 +16,10 @@ grandes telas: min 1200px and up
         font-family: 'Courier New', Courier, monospace;
     }
 
+    h1::after {
+        content: 'IMPRESSORA';
+    }
+
     main h1 {
         text-shadow: none;
         color: black;
@@ -34,6 +38,10 @@ grandes telas: min 1200px and up
         background: url(../imagens/back-tablet.jpg);
     }
 
+    h1::after {
+        content: 'TABLET';
+    }
+
     #phone {display: none;}
     #tablet {display: block;}
     #print {display: none;}
@@ -47,6 +55,10 @@ grandes telas: min 1200px and up
         background: url(../imagens/back-pc.jpg);
     }
 
+    h1::after {
+        content: 'PC';
+    }
+
     #phone {display: none;}
     #tablet {display: none;}
     #print {display: none;}
@@ -58,6 +70,10 @@ grandes telas: min 1200px and up
     body {
         background-color: black;
         background: url(../imagens/back-tv.jpg);
+    }
+
+    h1::after {
+        content: 'TV';
     }
 
     #phone {display: none;}
