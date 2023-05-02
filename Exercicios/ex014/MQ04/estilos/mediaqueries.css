@@ -2,3 +2,36 @@
 
 /* Todas as demais */
 
+/* Typical device breakpoints 
+
+pequenas telas: até 576px
+celular: min 576px 
+tablet: min 768px and up
+desktop: min 922px and up 
+grandes telas: min 1200px and up 
+*/
+
+@media print {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 922px) {
+    body {
+        background-color: black;
+        background: url(../imagens/back-tablet.jpg);
+    }
+}
+
+@media screen and (min-width: 922px) and (max-width: 1200px) {
+    body {
+        background-color: black;
+        background: url(../imagens/back-pc.jpg);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: black;
+        background: url(../imagens/back-tv.jpg);
+    }
+}
